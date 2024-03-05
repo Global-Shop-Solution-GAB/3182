@@ -1,0 +1,86 @@
+Program.Sub.ScreenSU.Start
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'Coded by TPH on 8/10/10 For Precision Gear Company
+'Hook: 12010
+'Description: Hides fields specified by the customer on the Lines screen when creating a new sales order
+
+F.Intrinsic.Control.If(V.Caller.Switches,=,"N")
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000206,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000202,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000203,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000204,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000199,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000196,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000195,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000197,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000192,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000100,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000182,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000186,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000129,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000183,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000179,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000178,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000103,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000176,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000173,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000172,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000003,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000017,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000020,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000070,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000027,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000134,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000119,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000137,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000120,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000139,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000121,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000140,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000194,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000006,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000133,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000018,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000019,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000013,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000131,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000054,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000055,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000023,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000033,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000032,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000074,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000016,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000026,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000071,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000075,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000063,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000010,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000130,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000008,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000012,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000117,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000118,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000064,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000005,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000175,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000014,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000177,"HIDE",1)
+	Function.Intrinsic.UI.ChangeCallerProperty(Variable.passed.000072,"HIDE",1)
+F.Intrinsic.Control.EndIf
+
+
+Program.Sub.main.end
+
+
+
+
+Program.Sub.Comments.Start
+${$0$}$$}$$}$12:00:00 AM$}$False
+Program.Sub.Comments.End
